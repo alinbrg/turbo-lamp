@@ -1,3 +1,9 @@
+/*  */
+
+/* header styles */
+
+/* footer styles */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -6,8 +12,14 @@
 ul {
 	list-style: none;
 }
+img {
+	max-width: 100%;
+}
 a {
 	text-decoration: none;
+}
+body {
+	padding-top: 80px;
 }
 nav li {
 	display: inline-block;
@@ -18,5 +30,48 @@ header nav {
 }
 .container {
 	max-width: 1200px;
-	margin: 0 auto 50px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+header {
+	background-color: cornflowerblue;
+	padding: 20px 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+}
+header a {
+	color: #fff;
+}
+.sticky {
+	position: sticky;
+	background-color: lightcoral;
+	top: 80px;
+}
+.parent {
+	background-color: lightseagreen;
+	width: 50%;
+	min-width: 300px;
+	padding: 20px;
+	/* height: 500px; */
+	position: relative;
+}
+.parent .child {
+	background-color: lightyellow;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.parent img {
+	aspect-ratio: 1/1;
+}
+div.sticky {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
 }
